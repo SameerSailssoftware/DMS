@@ -1075,3 +1075,26 @@ fieldset {
     color: #51a351;
     border-radius: 5px;
 }
+
+.spc3 {
+    background-color: #d4e2ee !important;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 50px;
+    font-size: small;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#undefined {
+    background-color: #ffffff;
+    height: 2rem;
+    border-width: 1px;
+    width: 100%;
+    font-weight: 550;
+    border-color: #B7BEC8 !important;
+    align-self: center;
+    font-size: 13px;
+    color: #5d636b;
+    border-radius: 5px;
+}
