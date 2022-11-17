@@ -1098,3 +1098,13 @@ fieldset {
     color: #5d636b;
     border-radius: 5px;
 }
+
+.spc4 {
+    background-color: #d4e2ee !important;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 50px;
+    font-size: small;
+    font-family: sans-serif;
+    font-weight: bold;
+}
