@@ -671,7 +671,8 @@ padding: 9px 0px;
 }
 
 #btnside{
-    padding-left: 43%;
+    /* padding-left: 42%; */
+    column-gap: 10px;
     display: flex;
     margin-top: 18px;
     width: 100%;
@@ -798,12 +799,6 @@ padding: 9px 0px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-.navbar-light .navbar-brand {
-    color: rgb(255 255 255 / 90%);
-    font-family: sans-serif;
-    font-size: 16px;
 }
 
 .container {
@@ -1182,3 +1177,7 @@ bg-brown{
     background-color: #ecf2f8 !important;
     border: 1px solid #99aebe !important;
 }
+
+
+/* Print Rx List With Attached Documents Starts.................................................................................................... */
+

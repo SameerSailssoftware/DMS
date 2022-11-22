@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>View Batch</title>
+  <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-light nav1">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Print Rx List With Attached Documents
+      </a>
+
+      </div>
+    </nav>
+    <div class="area pt-2" style="height:7rem;">
+      <section class="container">
+        <div>
+          <h5 class="py-2">From Fill Date</h5>
+          <form class="row">
+            <div class="col-3">
+                  <div class="input-group2 date" id="datepicker">
+                    <input type="text" class="form-control2" id="date" placeholder="01/01/2022">
+                    <span class="input-group-append">
+                      <span class="input-group-text d-block">
+                        <i class="fa fa-calendar"></i>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+          </form>
+        </div>
+
+        <div>
+            <h5 class="py-2">To Fill Date</h5>
+            <form class="row">
+              <div class="col-3">
+                    <div class="input-group2 date" id="datepicker">
+                      <input type="text" class="form-control2" id="date" placeholder="09/29/2022">
+                      <span class="input-group-append">
+                        <span class="input-group-text d-block">
+                          <i class="fa fa-calendar"></i>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+            </form>
+          </div>
+
+        <div>
+          <h5 class="py-2">Sub Category</h5>
+          <form class="row">
+            <div class="col-3">
+                  <div class="dropdown pl-0">
+                        <button class="btn btn-title dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sub Category
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="flex align-items-center pt-3">
+            <input type="checkbox" id="vehicle1">
+           <h5 class="py-2 pl-2">Print Attached Documents(Y/N)
+      </h5>
+          
+        </div>
+        
+        <div class="py-2" id="btnside">
+          <button class="btn" id="btn2"><span>- S</span> SEARCH</button>
+            <button class="btn" id="btn2"><span>- L</span> CLEAR</button>
+        </div>
+
+        
+
+        <!-- <div class="btn1">
+          <button class="btn" id="btn2"><i class="fa fa-search" style="color: white;"></i> Search</button>
+          <button class="btn" id="btn3"><i class="fa fa-ban" style="color: white;"></i> Clear</button>
+        </div> -->
+
+
+      </section>
+
+
+    </div>
+
+  </div>
+
+
+  <div class="m-4">
+
+
+    <table id="tbstud">
+      <tr>
+        <th class="column_heading" style="border-top-left-radius: 5px;">Actions </th>
+        <th class="column_heading">Rx#</th>
+        <th class="column_heading">Ins Code</th>
+        <th class="column_heading">Patient Name</th>
+        <th class="column_heading">Prescription Name</th>
+        <th class="column_heading">Drug Name</th>
+        <th class="column_heading">NDC</th>
+        <th class="column_heading">Documents ID</th>
+        <th class="column_heading">Sub Category</th>
+        <th class="column_heading">Title</th>
+        <th class="column_heading" style="border-top-right-radius: 5px;">Scan Date &nbsp; &nbsp; <button type="button"
+            class="btn"> <img src="icon/settings.png" height="15" width="15"></button></th>
+      </tr>
+      <tr class="customer_row">
+        <td class="spc2" id="left">
+          <button type="button" class="btn"> <img src="icon/bin.png" height="18px" width="18px"></button>
+          <button type="button" class="btn"> <img src="icon/View_Doc.png" height="18px" width="18px"></button>
+        </td>
+        <td>102966</td>
+        <td>MAD</td>
+        <td>DANIEL, SHEKAR</td>
+        <td>ADK, MSD</td>
+        <td>ASPIRIN ADLT E.C. 81MGEA TAB</td>
+        <td>24385-0535-76</td>
+        <td>62115</td>
+        <td>PRESCRIPTION</td>
+        <td>SF</td>
+        <td id="right">04/27/2022</td>
+      </tr>
+
+      <tr class="customer_row">
+            <td class="spc2" id="left">
+              <button type="button" class="btn"> <img src="icon/bin.png" height="18px" width="18px"></button>
+              <button type="button" class="btn"> <img src="icon/View_Doc.png" height="18px" width="18px"></button>
+            </td>
+            <td>102966</td>
+            <td>MAD</td>
+            <td>DANIEL, SHEKAR</td>
+            <td>ADK, MSD</td>
+            <td>ASPIRIN ADLT E.C. 81MGEA TAB</td>
+            <td>24385-0535-76</td>
+            <td>62115</td>
+            <td>PRESCRIPTION</td>
+            <td>SF</td>
+            <td id="right">04/27/2022</td>
+      </tr>
+
+      <tr class="customer_row">
+            <td class="spc2" id="left">
+              <button type="button" class="btn"> <img src="icon/bin.png" height="18px" width="18px"></button>
+              <button type="button" class="btn"> <img src="icon/View_Doc.png" height="18px" width="18px"></button>
+            </td>
+            <td>102966</td>
+            <td>MAD</td>
+            <td>DANIEL, SHEKAR</td>
+            <td>ADK, MSD</td>
+            <td>ASPIRIN ADLT E.C. 81MGEA TAB</td>
+            <td>24385-0535-76</td>
+            <td>62115</td>
+            <td>PRESCRIPTION</td>
+            <td>SF</td>
+            <td id="right">04/27/2022</td>
+      </tr>
+
+      <tr class="customer_row">
+            <td class="spc2" id="left">
+              <button type="button" class="btn"> <img src="icon/bin.png" height="18px" width="18px"></button>
+              <button type="button" class="btn"> <img src="icon/View_Doc.png" height="18px" width="18px"></button>
+            </td>
+            <td>102966</td>
+            <td>MAD</td>
+            <td>DANIEL, SHEKAR</td>
+            <td>ADK, MSD</td>
+            <td>ASPIRIN ADLT E.C. 81MGEA TAB</td>
+            <td>24385-0535-76</td>
+            <td>62115</td>
+            <td>PRESCRIPTION</td>
+            <td>SF</td>
+            <td id="right">04/27/2022</td>
+      </tr>
+    
+      <tr class="customer_row">
+            <td class="spc2" id="left">
+            <button type="button" class="btn"> <img src="icon/bin.png" height="18px" width="18px"></button>
+            <button type="button" class="btn"> <img src="icon/View_Doc.png" height="18px" width="18px"></button>
+            </td>
+            <td>102966</td>
+            <td>MAD</td>
+            <td>DANIEL, SHEKAR</td>
+            <td>ADK, MSD</td>
+            <td>ASPIRIN ADLT E.C. 81MGEA TAB</td>
+            <td>24385-0535-76</td>
+            <td>62115</td>
+            <td>PRESCRIPTION</td>
+            <td>SF</td>
+            <td id="right">04/27/2022</td>
+      </tr>
+    
+      <tr class="customer_row">
+            <td class="spc2" id="left">
+            <button type="button" class="btn"> <img src="icon/bin.png" height="18px" width="18px"></button>
+            <button type="button" class="btn"> <img src="icon/View_Doc.png" height="18px" width="18px"></button>
+            </td>
+            <td>102966</td>
+            <td>MAD</td>
+            <td>DANIEL, SHEKAR</td>
+            <td>ADK, MSD</td>
+            <td>ASPIRIN ADLT E.C. 81MGEA TAB</td>
+            <td>24385-0535-76</td>
+            <td>62115</td>
+            <td>PRESCRIPTION</td>
+            <td>SF</td>
+            <td id="right">04/27/2022</td>
+      </tr>
+
+      
+    </table>
+
+  </div>
+
+
+  <div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-light spc3">
+      <div class="container-fluid">
+        
+    <div class="pagination p1">
+    
+      
+    </div>
+
+    
+
+
+    <div class="footerbtn">
+
+    
+      <div class="btn2">
+      <button class="btn" id="btn0"><span>- P</span> PREVIEW</button>
+      </div>
+    
+      <div class="btn2">
+      <button class="btn" id="btn0"><span>- T</span> PRINT</button>
+      </div>
+
+      <div class="btn2">
+            <button class="btn" id="btn0"><span>- J</span> EXPORT</button>
+      </div>
+
+  </div>
+
+    
+ 
+      </div>
+    </nav>
+  </div>
+
+
+</body>
+
+</html>
